@@ -3,7 +3,7 @@
  * https://reactnavigation.org/docs/typescript/
  */
 
-import { RouteProp } from '@react-navigation/native';
+import type { RouteProp } from '@react-navigation/native';
 import type { ParamListBase, NavigatorScreenParams } from '@react-navigation/native';
 import type { StackScreenProps } from '@react-navigation/stack';
 
