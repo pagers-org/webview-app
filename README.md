@@ -1,0 +1,2 @@
+- `app.json`의 `expo.extra.eas.projectId`를 입력해주세요.
+- 푸시를 보낼 다른 기기의 ExpoPushToken을 `App.js` 최상단 상수(`TARGET_APP_PROJECT_ID`)에 입력해주세요.
