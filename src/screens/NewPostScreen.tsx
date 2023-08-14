@@ -17,7 +17,7 @@ const NewPostScreen = () => {
       <Stack.Navigator initialRouteName="EditorNew" screenOptions={STACK_SCREEN_OPTIONS}>
         <Stack.Screen
           name="EditorNew"
-          component={WebViewContainer('EditorNew', 'http://localhost:3000/editor/new')}
+          component={WebViewContainer('EditorNew', 'http://192.168.0.9:3000/editor/new')}
         />
       </Stack.Navigator>
     </SafeAreaView>

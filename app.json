@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "name": "webview-app",
+    "slug": "webview-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/realworld-icon.png",
@@ -43,7 +43,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "a5fbe474-12c3-49a6-969a-86ca7794ff86"
+        "projectId": "// TODO: 여기에 프로젝트 아이디를 입력해주세요//"
       }
     },
     "runtimeVersion": {

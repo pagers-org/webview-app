@@ -9,16 +9,11 @@ export const storeDataToAsyncStorage = async (key: string, value: string): Promi
 };
 
 export const getAsyncStorageData = async (key: string): Promise<string> => {
-  let result = '';
-
   try {
     const value = await AsyncStorage.getItem(key);
-    if (value) {
-      result = value;
-    }
+    return value ?? '';
   } catch (e) {
     console.log('error = ', e);
+    return '';
   }
-
-  return result;
 };

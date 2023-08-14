@@ -49,4 +49,11 @@ export type NativeEventParams =
     }
   | {
       type: 'ROUTER_REFRESH' | 'ROUTER_BACK';
+    }
+  | {
+      type: 'PUSH_NOTIFICATION';
+      to: string;
+      title: string;
+      body: string;
+      data: Record<string, unknown>;
     };

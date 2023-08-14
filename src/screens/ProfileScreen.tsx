@@ -17,7 +17,7 @@ const ProfileScreen = () => {
       <Stack.Navigator initialRouteName="UserSettings" screenOptions={STACK_SCREEN_OPTIONS}>
         <Stack.Screen
           name="UserSettings"
-          component={WebViewContainer('UserSettings', 'http://localhost:3000/user/settings')}
+          component={WebViewContainer('UserSettings', 'http://192.168.0.9:3000/user/settings')}
         />
       </Stack.Navigator>
     </SafeAreaView>

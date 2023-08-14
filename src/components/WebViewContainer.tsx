@@ -67,6 +67,23 @@ const WebViewContainer =
         navigation.dispatch(pushAction);
         return;
       }
+
+      if (nativeEvent.type === WEBVIEW_MESSAGE_TYPE.PUSH_NOTIFICATION) {
+        const { to, title, body, data } = nativeEvent;
+        console.log(to, title, body, data);
+        fetch('https://exp.host/--/api/v2/push/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            to,
+            title,
+            body,
+            data,
+          }),
+        });
+      }
     };
 
     return (

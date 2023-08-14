@@ -9,9 +9,10 @@ export const WEBVIEW_MESSAGE_TYPE = {
   ROUTER_EVENT: 'ROUTER_EVENT',
   ROUTER_REFRESH: 'ROUTER_REFRESH',
   ROUTER_BACK: 'ROUTER_BACK',
+  PUSH_NOTIFICATION: 'PUSH_NOTIFICATION',
 } as const;
 
-export const DEFAULT_TARGET_URL = 'http://localhost:3000';
+export const DEFAULT_TARGET_URL = 'http://192.168.0.9:3000';
 
 export const BOTTOM_TAB_SCREEN_OPTIONS: BottomTabNavigationOptions = {
   headerShown: false,
